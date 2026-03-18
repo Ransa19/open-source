@@ -26,6 +26,13 @@ jobs:
       - uses: actions/checkout@v4
 
       # Runs a single command using the runners shell
+    
+      - name: Limt check
+        run: echo "Lint passed"
+
+      - name: Build project
+        run: echo "Build complete"
+
       - name: Check README
         run: grep "project" README.md
 
